@@ -1,12 +1,13 @@
 import java.util.Scanner;
 public class Lap1Bai1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner bp = new Scanner(System.in);
         System.out.print("Nhập họ và tên: ");
-        String hoTen = scanner.nextLine();
+        String hoTen = bp.nextLine();
         System.out.print("Nhập điểm trung bình: ");
-        double diemTB = scanner.nextDouble();
-        System.out.printf("%s %f điểm",  hoTen ,  diemTB);
+        double diemTB = bp.nextDouble();
+        System.out.printf("%s %.2f điểm",  hoTen ,  diemTB);
 
     }
 }
+
