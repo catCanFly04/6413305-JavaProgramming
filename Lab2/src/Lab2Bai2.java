@@ -19,6 +19,18 @@ public class Lab2Bai2 {
                 double x = -c / b;
                 System.out.printf("Phương trình có nghiệm x = %.2f\n", x);
             }
+        } else {
+            double delta = b * b - 4 * a * c;
+            if (delta < 0) {
+                System.out.println("Phương trình vô nghiệm");
+            } else if (delta == 0) {
+                double x = -b / (2 * a);
+                System.out.printf("Phương trình có nghiệm kép x1 = x2 = %.2f\n", x);
+            } else {
+                double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+                System.out.printf("Phương trình có 2 nghiệm phân biệt x1 = %.2f và x2 = %.2f\n", x1, x2);
+            }
         }
     }
     
