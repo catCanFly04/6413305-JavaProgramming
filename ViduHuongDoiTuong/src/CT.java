@@ -11,13 +11,11 @@ public class CT {
         String thongTinSP2 = "SanPham{" +
                 "maSanPham=" + sp2.getMaSanPham() +
                 ", tenSanPham='" + sp2.getTenSanPham() + '\'' +
+                ", loaiSanPham='" + sp2.getLoaiSanPham() + '\'' +
+                ", anhSanPham='" + sp2.getanhSanPham() + '\''+
             '}';
         System.out.println(thongTinSP1);
         System.out.println(thongTinSP2);
-
-
-        
-
     }
     
 }
